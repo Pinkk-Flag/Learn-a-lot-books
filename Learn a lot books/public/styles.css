@@ -1,0 +1,395 @@
+/* Reset default styles and set global styling */
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    background:#141619;
+    color:#FFF;
+    box-sizing: border-box;
+}
+
+/* Remove underlines from anchor tags */
+a {
+    text-decoration: none;
+}
+
+/* Navigation styling */
+.myNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh;
+    font-size: 1.375vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.myNav img {
+    width: 12vw;
+    height: 8vh;
+    flex-shrink: 0;
+}
+
+.myNav ul {
+    list-style: none;
+    display: flex;
+}
+
+.myNav li {
+    margin-right: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.myNav li:last-child {
+    margin-right: 0;
+}
+
+.myNav a {
+    text-decoration: none;
+}
+
+/* Styling for navigation button with gradient background */
+.inherentnavbutton {
+    position: relative;
+    height: 4vh;
+    border-radius: 20px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+/* Gradient effect on navigation button */
+.inherentnavbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, #3555ff, rgba(143, 0, 255, 0));
+    border-radius: 10px;
+}
+
+/* Styling for links within the navigation button */
+.btn-grad-a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+/* Main title styling */
+.titlemainh1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 71px;
+    font-style: normal;
+    line-height: 86px;
+    text-decoration: bold;
+    padding:20px;
+}
+
+/* Styling for special blue text and main buttons */
+.myNav .specialbluetext a, .titlemainbutton {
+    color: #5FA4E6;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.53px;
+    text-transform: uppercase;
+    font-size: 1.375vw;
+}
+
+/* Additional text styling */
+.titlemainp {
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Styling for the main call-to-action button */
+.titlemainbutton {
+    display: block;
+    margin: 50px auto 50px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    width: 296px;
+    height: 58px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+/* Invisible horizontal rule styling */
+.invisible-hr {
+    padding:0vh;
+    margin:1vh;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Styling for a full-width image with gradient text */
+.orwouldyouratherimagediv {
+    width:100vw;
+}
+
+.gradient-text {
+    display:inline;
+    background: linear-gradient(135deg, #FFD700, #FF6347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Testimonial section styling */
+.cataloguecarouselh2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78px;
+}
+
+/* Testimonial text styling */
+.testimonialheader {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78px;
+}
+
+.testsmalltext {
+    color: #FFF;
+    text-align: center;
+    width: 650px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.testbigtext {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signingofftesttext {
+    text-align: center;
+    padding:5px;
+    margin:5px;
+    font-weight: 900;
+    font-size: 1vm;
+}
+
+.smalltesttest {
+    text-align: center;
+    padding:2px;
+    margin:10px;
+    font-weight: 900;
+    font-size: 1vm;
+}
+
+/* Join section container styling */
+.join-container {
+    display: flex;
+}
+
+/* Join section title styling */
+.joinheadertitle {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin: 150px auto;
+}
+
+/* Join section text styling */
+.jointext {
+    flex: 1;
+    margin-left: 100px;
+    color: #E5E5E5;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 20px;
+}
+
+/* Keyframe animation for sliding books in the catalog */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Book carousel styling */
+.books-slide img {
+    height:35vh;
+    margin:0 5vw;
+}
+
+.books-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.books {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #141619;
+    white-space: nowrap;
+}
+
+/* Pause book carousel on hover */
+.books:hover .books-slide {
+    overflow: hidden;
+    animation-play-state: paused;
+}
+
+/* Keyframe animation for sliding logos in the Brand Slider */
+@keyframes slidev2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Logo carousel styling */
+.logo-slide img {
+    height: 11vh;
+    margin: 0 5vh;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 25s slidev2 infinite linear;
+}
+
+.logo {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #141619;
+    white-space: nowrap;
+}
+
+/* Pause logo carousel on hover */
+.logo:hover .logo-slide {
+    overflow: hidden;
+    animation-play-state: paused;
+}
+
+/* Contact section styling */
+.contacth1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78px;
+}
+
+/* Contact section text styling */
+.contactusp {
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+/* Contact button styling */
+.contactus button {
+    display: block;
+    margin: 50px auto 50px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    width: 296px;
+    height: 58px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+/* Footer section styling */
+.footer {
+    background-color: #141619;
+    padding: 20px;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left-aligned footer links styling */
+.leftfooterlinks {
+    margin-right: auto;
+}
+
+.leftfooterlinks ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.leftfooterlinks a {
+    text-decoration: none;
+    color: #5FA4E6;
+}
+
+/* Right-aligned logo styling */
+.logoimg {
+    margin-left: auto;
+}
+
+/* Responsive image styling within the logo section */
+.logoimg img {
+    max-width: 100px;
+}
