@@ -1,4 +1,4 @@
-# Learn-a-lot-books-website-v1
+# Learn a lot books
 
 ![image](https://github.com/Pinkk-Flag/Learn-a-lot-books-website-v1/assets/91942071/765f4770-dedf-4056-9b0f-33f2c09f7250)
 
